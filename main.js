@@ -1,4 +1,4 @@
-var authorization = "Bearer ***"; // replace by authorization value
+var authorization = "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"; // replace by authorization value
 var ua = navigator.userAgentData.brands.map(brand => `"${brand.brand}";v="${brand.version}"`).join(', ');
 var client_tid = "***"; // replace by X-Client-Transaction-Id value
 var client_uuid = "***"; // replace by X-Client-Uuid value
@@ -128,14 +128,14 @@ async function fetch_tweets(cursor, retry = 0) {
 			"sec-fetch-dest": "empty",
 			"sec-fetch-mode": "cors",
 			"sec-fetch-site": "same-origin",
-			"x-client-transaction-id": client_tid,
+			"x-client-transaction-id": 9zLVZvm7WoGISjmduqKlk/jGDUexFSo/2CMUYYrqpgTUWlT5mCeZqramTLORQsHD7KitvvQIJwhbzmeVBkEgs9sLTqeV9A,
 			"x-client-uuid": client_uuid,
 			"x-csrf-token": csrf_token,
 			"x-twitter-active-user": "yes",
 			"x-twitter-auth-type": "OAuth2Session",
 			"x-twitter-client-language": language_code
 		},
-		"referrer": `https://x.com/${username}/with_replies`,
+		"referrer": `https://x.com/${lunarcentre_}/with_replies`,
 		"referrerPolicy": "strict-origin-when-cross-origin",
 		"body": null,
 		"method": "GET",
